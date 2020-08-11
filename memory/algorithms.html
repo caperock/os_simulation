@@ -1,0 +1,119 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div class="card-panel red lighten-4">
+        <h4 style="font-family:verdana"><font size="6">Memory page replacement Algorithms</font></h4>
+      </div>
+
+
+
+      <!--Choice algorithm-->
+      <div class="container">
+      <div class="card-panel cyan lighten-5">
+  <form action="#" >
+    <p>
+      <label>
+        <input name="Algorithm" type="radio" checked/>
+        <span><font size="4" color="black">Optimal</font></span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input  name="Algorithm" type="radio" />
+        <span><font size="4" color="black">Second chance</font></span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input  name="Algorithm" type="radio" />
+        <span><font size="4" color="black">First in First out</font></span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input  name="Algorithm" type="radio"/>
+        <span><font size="4" color="black">Least Recently used</font></span>
+      </label>
+    </p>
+  </form>
+      </div>
+      </div>
+
+
+
+
+
+    <!-- input Frames  -->
+ <div class="container">
+      <div class="card-panel pink cyan lighten-5">
+         <form action="#" oninput="x.value=parseInt(frameCount.value)">
+          <p><font size="4" color="black">Number of Page Frames:
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <output name="x"></output></font></p>
+          <p class="range-field">
+            <input type="range" id="frameCount" value="3" min="2" max="9">
+          </p>
+        </form>
+<!-- input page numbers  -->
+<div class="row">
+    <div class="input-field">
+      <font size="7"><input value="1 4 3 4 3 2 1 3 4 3 4 1 3" id="input_sequence" type="text" required></font>
+      <label class="active" for="first_name2"><font size="5" color="black">Page References:</font></label>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- Go button -->
+    <div style="float:right">
+    <button class="waves-effect waves-light btn-large" id="GO">GO
+    </button>
+    </div>
+
+    <a><button class="waves-effect waves-light btn-large red accent-2"  id = "random">Random Values</button></a><br/><br/>
+
+    <a class="waves-effect waves-light btn-large modal-trigger" href="#Special_Thanks">Special Thanks</a><br/>
+     
+    <div id="Special_Thanks" class="modal">
+    <div class="modal-content">
+     <div class="col s12"><font size="5">Using JQuery for functions and code writing-----<a href="https://jquery.com/">JQuery</a></font></div>
+     <div class="col s12"><<<----------------------------->>></div>
+    <div class="col s12"><font size="5">Using Materialize to improve vision effect-----<a href="https://materializecss.com/">materialize.css</a></font></div>
+      </ul>
+      </center>     
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-light btn-large">Close</a>
+    </div>
+  </div>
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+  </html>
