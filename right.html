@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body bgcolor=#f5f5f5>
+     
+
+    <!-- introduction-->
+
+    <div class="container">
+      <div class="card-panel white">
+      <div><style="font-family:verdana"><font size="4">
+	  <p> <b>
+Overview
+	</b></p>
+	  Our simulation of computer operating systems creates a web-based, multilingual simulation for students to learn 12 algorithms of operating systems in anywhere and anytime. The simulation encourages student-centered learning by allowing students to generate unlimited examples and animations with correct answers that improves learning curves, reduces misunderstands, and enhance teaching efficiency. We are not the first to take this step, but to the best of our knowledge, this is the first multilingual, web-based simulation that offer 12 operating system algorithms, including three CPU scheduling algorithms, four memory page replacement algorithms, three disk arm algorithms, and four deadlock detection algorithms. In addition, the simulation supports 109 languages through Google translation tool, and that means foreign students are also benefited from it.
+	  </p>
+
+
+
+
+<p> <b>
+Job Scheduling Algorithms
+</b></p>
+<p>
+The job scheduling algorithm simulator visualises different algorithmic approaches to sorting and completing processes in a CPU. On load of the page, the CPU will create two processes with random execution times, and a sorted priority value. The execution time is how long it takes a process to complete. The priority value is how important a given process is, with the more important processes receiving higher values.
+
+To use the simulator, select a job scheduling algorithm from the drop-down menu, and press "generate table". Please Note: If you select the "Round Robin" scheduling algorithm, you will need to enter a quantam value. By default, this value is three.
+After completion, the page will load your processes in the order that they are processed, along with how much time is spent processing. To see service time and end time, hover your mouse over a process.
+</p>
+
+
+<p> <b>
+Page Replacement Algorithms
+</b></p>
+The page replacement algorithm simulator visualises different algorithmic approaches for the selection and removal of page frames in a CPU register. On load of the page, all form input will be empty. This can be user-entered to populate data, and then loaded into a page replacement table by selecting "Generate New Table". Alternatively, a random page frame table can be populated by selected "Random Values".
+The string of values is a string of space-delimited numbers that will be referenced by the page frames. Upon the generation of a page table, the program will check which page values hit and miss, and which values are dropped. These values can be seen by their specified table row.
+At the bottom of the page replacement table is a summary of the data, with the values of all hits and page faults, as well as the hit rate and fault rate.
+</p>
+
+
+<p> <b>
+Disk Arm Algorithms
+<p> </b>
+The disk arm algorithm simulator visualises different algorithmic approaches for the traversal of a secondary memory disk. On load of the page, the page will create a random input string of cylinder locations. Selecting "Generate New Table" will then create a table which traverses the string in any of the three traversal methods
+At the bottom of the disk arm simulation table is the value for the total traversal time. This is the amount of time it took the disk arm to traverse all cylinder values.
+</p>
+
+
+<p> <b>
+Deadlock Algorithms
+<p> </b>
+The deadlock simulator visualizes two different models for detecting deadlocks. On page load, the default settings create two processes with a random amount of current and required resources of each type. These are all editable. In addition, it sets the availablility vector to 0's.
+After setting these values, pressing the "Check for deadlock" button will run the chosen deadlock detection algorithm and see if the available resources are enough to avoid a deadlock. It does this by following the specified deadlock detection algorithm.
+If the method is set to the "Banker's Algorithm", the input data changes on reload of the table. Instead of requesting the requested resources, the new input section asks for the total table. As part of the Banker's algorithm, the algorithm calculates the available resources by taking the difference of the provided total resources and the currently possessed resources by each process.
+</p>
+	  </font></div>
+      </div>
+      </div>
+	  
+	   <div class="card-panel lime lighten-5">
+        <h4 style="font-family:verdana"><font size="3">Authors: Zachary Locke(Undergradaute, Computer Science in SEMO), Jiahao Deng (Undergradaute, Computer Science in SEMO), and Wei Dai(Advisor, Assistant Professor)</font></h4>
+      </div>
+
+
+
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+  </html>
