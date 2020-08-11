@@ -1,0 +1,123 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div class="card-panel red lighten-4">
+        <h4 style="font-family:verdana"><font size="5">CPU Scheduling Algorithms</font></h4>
+      </div>
+
+
+
+      <!--Choice algorithm-->
+      <div class="container">
+      <div class="card-panel cyan lighten-5">
+  <form action="#" >
+    <p>
+      <label>
+        <input name="Algorithm" type="radio" checked/>
+        <span><font size="3" color="black">First Come First Serve</font></span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input  name="Algorithm" type="radio" />
+        <span><font size="3" color="black">Priority Scheduling</font></span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input  name="Algorithm" type="radio" />
+        <span><font size="3" color="black">Round Robin</font></span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input  name="Algorithm" type="radio"/>
+        <span><font size="3" color="black">Short Job First</font></span>
+      </label>
+    </p>
+  </form>
+   <!-- input jobs  -->
+  <form action="#" oninput="x.value=parseInt(Jobs_input.value)">
+          <p><font size="4" color="black">Jobs:
+            &nbsp&nbsp&nbsp&nbsp&nbsp
+            <output name="x"></output></font></p>
+          <p class="range-field">
+            <input type="range" id="Jobs_input" value="6" min="3" max="15">
+          </p>
+        </form>
+ <!-- input size  -->
+      <div class="row">
+    <div class="input-field">
+      <font size="6"><input id="input_sequence" type="text" required></font>
+      <label class="active" for="first_name2"><font size="5" color="black">Execution Time:</font></label>
+      <a><button class="waves-effect waves-light btn-large red accent-1"  id = "random">Random Values</button></a>
+    </div>
+  </div>
+
+  <!-- input Priority value  -->
+      <div class="row">
+    <div class="input-field">
+      <font size="6"><input id="pvalue" type="text" required></font>
+      <label class="active" for="first_name2"><font size="5" color="black">Priority Value:</font></label>
+      <a><button class="waves-effect waves-light btn-large red accent-1"  id = "randomp">Random Values</button></a>
+    </div>
+  </div>
+
+      </div>
+      </div>
+
+
+
+
+
+   
+
+
+
+
+
+
+<!-- input Quantam  -->
+<div class="container">
+      <div class="card-panel pink cyan lighten-5">
+         <form action="#" oninput="x.value=parseInt(Quantam_input.value)">
+          <p><font size="3" color="black">Quantam (For Round Robin Algorithm):
+            <output name="x"></output></font></p>
+          <p class="range-field">
+            <input type="range" id="Quantam_input" value="3" min="2" max="9">
+          </p>
+        </form>
+</div>
+</div>
+
+
+
+    <!-- Go button -->
+    <div style="float:right">
+    <button class="waves-effect waves-light btn-large" id="GO">GO
+    </button>
+    </div>
+
+
+    
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    </body>
+  </html>
